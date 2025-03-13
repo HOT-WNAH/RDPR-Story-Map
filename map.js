@@ -239,6 +239,7 @@ map.on("load", function () {
   //         .addTo(map);
   // });
 
+  // Chapter 1 vector layer
   map.addLayer({
     id: 'chapter1vector',
     type: 'fill',
@@ -259,7 +260,7 @@ map.addLayer({
   source: 'chapter1vector',
   paint: {
       'line-color': '#FFFFFF',
-      'line-width': 1.5
+      'line-width': 2
   }
 });
 
@@ -274,7 +275,7 @@ map.addLayer({
   layout: {
       'text-field': ['get', 'Country'], // Assumes your GeoJSON has a "name" property
       'text-font': ['Open Sans Bold'],
-      'text-size': 14,
+      'text-size': 10,
       'text-anchor': 'center'
   },
   paint: {
@@ -284,8 +285,7 @@ map.addLayer({
   }
 });
 
-
-
+ // Chapter 3 vector layer
   map.addLayer({
     id: 'chapter3vector',
     type: 'fill',
@@ -306,31 +306,49 @@ map.addLayer({
     source: 'chapter3vector',
     paint: {
         'line-color': '#FFFFFF',
-        'line-width': 1.5
+        'line-width': 3
     }
 });
 
 // Add label layer
 map.addLayer({
-    id: 'chapter3vectorLabels',
-    type: 'symbol',
-    source: {
-        type: "geojson",
-        data: "data/morocco_liberia.geojson",
-    },
-    layout: {
-      'text-field': ['concat', ['get', 'Country'], '\n', ['get', 'text']], 
-      'text-font': ['Open Sans Bold'],
-        'text-size': 14,
-        'text-anchor': 'center'
-    },
-    paint: {
-        'text-color': '#000000', // Black text
-        'text-halo-color': '#FFFFFF',
-        'text-halo-width': 1
-    }
+  id: 'chapter3vectorLabels',
+  type: 'symbol',
+  source: {
+      type: "geojson",
+      data: "data/morocco_liberia.geojson",
+  },
+  layout: {
+    'text-field': ['concat', ['get', 'Country'], '\n', ['get', 'text']], 
+    'text-font': ['Open Sans Bold'],
+      'text-size': 10,
+      'text-anchor': 'center'
+  },
+  paint: {
+      'text-color': '#000000', // Black text
+      'text-halo-color': '#FFFFFF',
+      'text-halo-width': 1
+  }
 });
 
+ // Chapter 4 vector layer
+ map.addLayer({
+  id: 'chapter4vector',
+  type: 'fill',
+  source: {
+      type: "geojson",
+      data: "data/nigeria_liberia.geojson",
+  },
+  paint: {
+    paint: {
+      'line-color': '#FFFFFF',
+      'line-width': 1.5
+  }
+  }
+});
+
+
+ // Chapter 5 vector layer
 map.addLayer({
   id: 'chapter5vector',
   type: 'fill',
@@ -351,7 +369,6 @@ map.addLayer({
   }
 });
 
-
 // Add outline color
 map.addLayer({
   id: 'chapter5vectorBorder',
@@ -362,25 +379,6 @@ map.addLayer({
       'line-width': 1.5
   }
 });
-
-
-
-
-map.addLayer({
-  id: 'chapter4vector',
-  type: 'fill',
-  source: {
-      type: "geojson",
-      data: "data/nigeria_liberia.geojson",
-  },
-  paint: {
-    paint: {
-      'line-color': '#FFFFFF',
-      'line-width': 1.5
-  }
-  }
-});
-
 
 // Add label layer
 map.addLayer({
@@ -402,6 +400,9 @@ map.addLayer({
       'text-halo-width': 1
   }
 });
+
+
+
 
   //    // Add a popup on click
   //    map.on('click', 'Affec', function (e) {

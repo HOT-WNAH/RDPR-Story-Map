@@ -85,7 +85,7 @@ var config = {
 
         center: { lon: 6.2381, lat: 14.493 },
         zoom: 2,
-        pitch: 0.00,
+        pitch: 45,
         bearing: 0.00
 
       },
@@ -181,10 +181,10 @@ var config = {
       description: "",
       chapterDiv: divChapter3,
       location: {
-        center: { lon: -13.08, lat: 16.76 },
+        center: { lon: 5, lat: 16.76 },
         zoom: 3.42,
-        pitch: 0.00,
-        bearing: 0.00
+        pitch: 45,
+        bearing: 45
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -194,7 +194,6 @@ var config = {
         {layer: 'chapter3vector',opacity: 1},
         {layer: 'chapter3vectorBorder',opacity: 1},
         {layer: 'chapter3vectorLabels',opacity: 1},
-
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
@@ -291,7 +290,6 @@ var config = {
         {layer: 'chapter3vector',opacity: 0},
         {layer: 'chapter3vectorBorder',opacity: 0},
         {layer: 'chapter3vectorLabels',opacity: 0},
-
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
