@@ -37,20 +37,40 @@ let divChapter2 =
 let divChapter3 =
 "<h3>Chapter 3: OpenStreetMap use cases in disaster response</h3>" +
 '<img src="images/Chapter_3_Image.jpeg">' +
-
-
 '<p class="imageCredit"><a href="https://www.hotosm.org/projects/morocco-earthquake-openstreetmap-data-in-support-of-response-efforts/" target="_blank">Morocco Earthquake: OpenStreetMap data in support of response efforts</a></p>' +
 "<p>OpenStreetMap (OSM) data has played a crucial role in disaster response efforts in both Morocco and Liberia. Following the devastating Morocco earthquake, humanitarian organizations and mapping volunteers quickly mobilized to update and enhance OSM data, providing responders with detailed maps of affected areas. This included mapping roads, buildings, and critical infrastructure to support search and rescue operations, logistics planning, and aid distribution. The effort ensured that emergency responders had up-to-date geographic information to navigate damaged regions efficiently and coordinate relief efforts effectively.</p>" +
 "<p>In Liberia, OSM data has been instrumental in tracking and mitigating flooding in rural areas, particularly in Robertsport. Local mapping initiatives have worked to collect geospatial data on flood-prone areas, infrastructure, and community resources. By integrating OSM data with real-time flood tracking, authorities and humanitarian groups can better predict flood risks, improve early warning systems, and design more effective response strategies. This proactive use of OSM enhances disaster preparedness, helping communities become more resilient against future flooding events.</p>"
 
+
+let divChapter3a =
+"<h3>Chapter 3a: Open Data for Disaster Response: Supporting Responders through Crowdsourcing Mapping Efforts</h3>" +
+'<img src="images/Chapter_3a_Image.jpg">' +
+"<p>The 2023 Moroccan earthquake struck several Moroccan cities on the night of September 08 to 09, 2023, at 23:11 (local time). During a crisis, responders must quickly determine where the event happened, who is affected, and what urgent needs arise. Basic information about affected areas and populations often conveyed through maps, is crucial for effective intervention. However, not all communities are fully mapped, and disasters can quickly change mapped areas. In response to the devastating earthquake in Morocco, humanitarian organizations and mapping volunteers rapidly updated and enhanced OpenStreetMap (OSM) data to support emergency efforts. A key focus was mapping buildings, which allowed responders to estimate the extent of the damage. By analyzing this data, humanitarian teams could determine the number of affected structures, helping to guide relief operations and resource allocation more effectively.</p>"
+
+let divChapter3b =
+"<h3>Chapter 3a: Open Data for Disaster Preparedness: Liberia’s Fight Against Flooding</h3>" +
+'<img src="images/Chapter_3b_Image.jpg">' +
+'<p class="imageCredit"><a href="https://www.liberianobserver.com/news/rising-voices-robertsport-leads-liberia-s-fight-against-flooding/article_0a9307d8-da25-11ef-8947-2f9e3e0007a7.html" target="_blank">Rising Voices: Robertsport Leads Liberia’s Fight Against Flooding</a></p>' +
+
+"<p>Robertsport residents face significant challenges from heavy rainfall and coastal erosion. Nighttime downpours often catch communities unprepared, with women and children disproportionately affected by displacement, disrupted education, and limited healthcare access.Until recently, assessment of the impacts of flooding and sea erosion was hindered by limited data, constraining disaster response and long-term planning efforts. Stakeholders such as the Liberia National Red Cross Society, the National Disaster Management Agency, the Environmental Protection Agency, local authorities, and community groups, identified that open and participatory approach to collect and map critical data can help in informed decision-making. The project engaged key disaster response actors, trained stakeholders in using maps and data for flood planning, undertook community education, and gathered community inputs on risks and vulnerabilities through focus groups, town hall meetings, and radio programs. This helped document critical vulnerabilities, including informal waste disposal practices, substandard housing construction, and overall living conditions, and provided critical data to design community and national level mitigation strategies.</p>"
+
+
+
 let divChapter4 =
-"<h3>Chapter 4:  Data Gaps in OSM during disaster response</h3>" +
+"<h3>Chapter 4: Liberia - Data Gaps in OSM during disaster response</h3>" +
 '<img src="images/Chapter_4_Image.jpg">' +
 '<p class="imageCredit"><a href="https://www.gdacs.org/Floods/report.aspx?eventid=1101617&episodeid=1&eventtype=FL" target="_blank">Overall green alert flood for Liberia from GDACS</a></p>' +
 "<p>OpenStreetMap (OSM) data plays a vital role in disaster response by providing real-time, crowdsourced geographic information for mapping affected areas, planning relief efforts, and coordinating emergency operations. However, data gaps in OSM often hinder effective disaster response.</p>" +
-"<p>From June 17 to mid-July 2022, heavy rains and flooding impacted several communities in Liberia’s Margibi and Montserrado counties, affecting over 89,315 people—primarily in Montserrado. The disaster destroyed numerous homes and three reported fatalities (with only one confirmed). The response efforts in these counties were significantly hampered by a lack of up-to-date information on buildings, roads, and essential infrastructure.</p>" +
+"<p>From June 17 to mid-July 2022, heavy rains and flooding impacted several communities in Liberia’s Margibi and Montserrado counties, affecting over 89,315 people—primarily in Montserrado. The disaster destroyed numerous homes and three reported fatalities (with only one confirmed). The response efforts in these counties were significantly hampered by a lack of up-to-date information on buildings, roads, and essential infrastructure.</p>" 
+
+let divChapter4b =
+"<h3>Chapter 4b: Nigeria - Data Gaps in OSM during disaster response</h3>" +
+'<img src="images/Chapter_4b_Image.jpg">' +
+'<p class="imageCredit"><a href="https://www.gdacs.org/Floods/report.aspx?eventid=1101659&episodeid=5&eventtype=FL" target="_blank">Overall red alert flood for Nigeria from GDACS</a></p>' +
 "<p>A similar disaster occurred in Southern and Central Nigeria in October 2022, resulting in 603 fatalities, over 2,400 injuries, and nearly 1.3 million displaced people, with more than 2.5 million affected nationwide. Bayelsa State was the hardest hit, with around 700,000 people displaced or affected. Reports also indicate that approximately 203,400 houses were damaged, including over 82,000 destroyed.</p>" +
 "<p>To overcome these challenges during disaster response, the WNAH mobilizes mapping communities through open participatory mapping, using remote and field mapping initiatives to rapidly generate crucial OSM data. This ensures that accurate geospatial information is available for humanitarian responders to assess disaster impacts and improve response efforts in affected regions.</p>"
+
+
 
 let divChapter5 =
 "<h3>Chapter 5: OSM mapping campaigns for disaster preparedness in the region</h3>" +
@@ -93,33 +113,44 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+
         {layer: 'chapter1vector',opacity: 1},
         {layer: 'chapter1vectorBorder',opacity: 1},
         {layer: 'chapter1vectorLabels',opacity: 1},
-        {layer: 'chapter5vector',opacity: 0},
-        {layer: 'chapter5vectorBorder',opacity: 0},
-        {layer: 'chapter5vectorLabels',opacity: 0},
-
-
-
-
-      ],
-      onChapterExit: [
         {layer: 'chapter3vector',opacity: 0},
         {layer: 'chapter3vectorBorder',opacity: 0},
         {layer: 'chapter3vectorLabels',opacity: 0},
-        {layer: 'chapter1vector',opacity: 0},
-        {layer: 'chapter1vectorBorder',opacity: 0},
-        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
+       
+       
+
+      ],
+      onChapterExit: [
 
 
-
+        {layer: 'chapter1vector',opacity: 1},
+        {layer: 'chapter1vectorBorder',opacity: 1},
+        {layer: 'chapter1vectorLabels',opacity: 1},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
 
       ],
     },
@@ -144,26 +175,40 @@ var config = {
         document.getElementById("walkability-legend").style.visibility = "visible";
     },
       onChapterEnter: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
-
-
-
       ],
       onChapterExit: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+
+
+    
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
@@ -191,30 +236,162 @@ var config = {
       callback: "",
       onChapterEnter: [
       
-        {layer: 'chapter3vector',opacity: 1},
-        {layer: 'chapter3vectorBorder',opacity: 1},
-        {layer: 'chapter3vectorLabels',opacity: 1},
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 1},
+        {layer: 'chapter3vectorBorder',opacity: 1},
+        {layer: 'chapter3vectorLabels',opacity: 1},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
         
       ],
       onChapterExit: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+  
+        
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 1},
+        {layer: 'chapter3vectorBorder',opacity: 1},
+        {layer: 'chapter3vectorLabels',opacity: 1},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
 
       ],
     },
+
+    {
+      id: "chapter3a",
+      alignment: "left",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter3a,
+      location: {
+        center: { lon: -8.9949, lat: 30.9303 },
+        zoom: 9,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+      
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 1},
+        {layer: 'chapter3avectorbuildings',opacity: 1},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+        
+      ],
+      onChapterExit: [
+    
+
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 1},
+        {layer: 'chapter3avectorbuildings',opacity: 1},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+
+      ],
+    },
+
+
+    {
+      id: "chapter3b",
+      alignment: "left",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter3b,
+      location: {
+        center: { lon: -11.353, lat: 6.7553 },
+        zoom: 11,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 1},
+        {layer: 'chapter3bvectorbuildings',opacity: 1},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+        
+      ],
+      onChapterExit: [
+
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 1},
+        {layer: 'chapter3bvectorbuildings',opacity: 1},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+
+      ],
+    },
+    
     {
       id: "chapter4",
       alignment: "left",
@@ -224,8 +401,8 @@ var config = {
       description: "",
       chapterDiv: divChapter4,
       location: {
-        center: { lon: 7.0180, lat: 11.46775 },
-        zoom: 3.42,
+        center: { lon: -10.49, lat: 6.552 },
+        zoom: 9,
         pitch: 0.00,
         bearing: 0.00
       },
@@ -233,30 +410,106 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 1},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
 
       ],
       onChapterExit: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+ 
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 0},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
 
       ],
     },
+
+
+    {
+      id: "chapter4b",
+      alignment: "left",
+      hidden: false,
+      title: "",
+      image: "",
+      description: "",
+      chapterDiv: divChapter4b,
+      location: {
+        center: { lon: 7.56, lat: 5.909 },
+        zoom: 8,
+        pitch: 0.00,
+        bearing: 0.00
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+
+
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 1},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+      ],
+      onChapterExit: [
+
+
+        {layer: 'chapter1vector',opacity: 0},
+        {layer: 'chapter1vectorBorder',opacity: 0},
+        {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 1},
+        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
+
+      ],
+    },
+
     {
       id: "chapter5",
       alignment: "right",
@@ -275,25 +528,42 @@ var config = {
       rotateAnimation: false,
       callback: "",
       onChapterEnter: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
         {layer: 'chapter5vector',opacity: 1},
-        {layer: 'chapter5vectorBorder',opacity: 1},
-        {layer: 'chapter5vectorLabels',opacity: 1},
+        {layer: 'chapter5vectorBorder',opacity: 0},
+        {layer: 'chapter5vectorLabels',opacity: 0},
 
       ],
       onChapterExit: [
-        {layer: 'chapter3vector',opacity: 0},
-        {layer: 'chapter3vectorBorder',opacity: 0},
-        {layer: 'chapter3vectorLabels',opacity: 0},
+   
+
+
         {layer: 'chapter1vector',opacity: 0},
         {layer: 'chapter1vectorBorder',opacity: 0},
         {layer: 'chapter1vectorLabels',opacity: 0},
-        {layer: 'chapter5vector',opacity: 0},
+        {layer: 'chapter3vector',opacity: 0},
+        {layer: 'chapter3vectorBorder',opacity: 0},
+        {layer: 'chapter3vectorLabels',opacity: 0},
+        {layer: 'chapter3avector',opacity: 0},
+        {layer: 'chapter3avectorbuildings',opacity: 0},
+        {layer: 'chapter3bvector',opacity: 0},
+        {layer: 'chapter3bvectorbuildings',opacity: 0},
+        {layer: 'chapter4vector',opacity: 0},
+        {layer: 'chapter4bvector',opacity: 0},
+        {layer: 'chapter5vector',opacity: 1},
         {layer: 'chapter5vectorBorder',opacity: 0},
         {layer: 'chapter5vectorLabels',opacity: 0},
       ],

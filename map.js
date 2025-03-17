@@ -306,7 +306,7 @@ map.addLayer({
     source: 'chapter3vector',
     paint: {
         'line-color': '#FFFFFF',
-        'line-width': 3
+        'line-width': 5
     }
 });
 
@@ -319,7 +319,7 @@ map.addLayer({
       data: "data/morocco_liberia.geojson",
   },
   layout: {
-    'text-field': ['concat', ['get', 'Country'], '\n', ['get', 'text']], 
+    'text-field': ['concat', ['get', 'Country'], '\n', ['get', 'text2']], 
     'text-font': ['Open Sans Bold'],
       'text-size': 10,
       'text-anchor': 'center'
@@ -331,23 +331,96 @@ map.addLayer({
   }
 });
 
- // Chapter 4 vector layer
+
+ // Chapter 3a vector layer
  map.addLayer({
-  id: 'chapter4vector',
-  type: 'fill',
+  id: 'chapter3avector',
+  type: 'line',
   source: {
       type: "geojson",
-      data: "data/nigeria_liberia.geojson",
+      data: "data/morocco_tm.geojson",
   },
   paint: {
-    paint: {
-      'line-color': '#FFFFFF',
-      'line-width': 1.5
-  }
+    'line-color': '#faa71e',
+    'line-width': 5
   }
 });
 
 
+ // Chapter 3a vector layer
+ map.addLayer({
+  id: 'chapter3avectorbuildings',
+  type: 'line',
+  source: {
+      type: "geojson",
+      data: "data/morocco_tm_buildings.geojson",
+  },
+  paint: {
+    'line-color': '#FF0000',
+    'line-width': 2
+  }
+});
+
+ // Chapter 3b vector layer
+ map.addLayer({
+  id: 'chapter3bvector',
+  type: 'line',
+  source: {
+      type: "geojson",
+      data: "data/liberia_tm.geojson",
+  },
+  paint: {
+    'line-color': '#faa71e',
+    'line-width': 5
+  }
+});
+
+
+ // Chapter 3a vector layer
+ map.addLayer({
+  id: 'chapter3bvectorbuildings',
+  type: 'line',
+  source: {
+      type: "geojson",
+      data: "data/liberia_tm_buildings.geojson",
+  },
+  paint: {
+    'line-color': '#FF0000',
+    'line-width': 3
+  }
+});
+
+ // Chapter 4 vector layer
+ map.addLayer({
+  id: 'chapter4vector',
+  type: 'line',
+  source: {
+      type: "geojson",
+      data: "data/margibi_liberia.geojson",
+  },
+  
+    paint: {
+      'line-color': '#faa71e',
+      'line-width': 5
+  
+  }
+});
+
+ // Chapter 4b vector layer
+ map.addLayer({
+  id: 'chapter4bvector',
+  type: 'line',
+  source: {
+      type: "geojson",
+      data: "data/cross_river_nigeria.geojson",
+  },
+  
+    paint: {
+      'line-color': '#faa71e',
+      'line-width': 5
+  
+  }
+});
  // Chapter 5 vector layer
 map.addLayer({
   id: 'chapter5vector',
