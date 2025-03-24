@@ -291,7 +291,7 @@ map.addLayer({
     type: 'fill',
     source: {
         type: "geojson",
-        data: "data/morocco_liberia.geojson",
+        data: "data/morocco_liberia_nigeria.geojson",
     },
     paint: {
         'fill-color': '#faa71e', // Light Yellow
@@ -319,7 +319,7 @@ map.addLayer({
       data: "data/morocco_liberia.geojson",
   },
   layout: {
-    'text-field': ['concat', ['get', 'Country'], '\n', ['get', 'text2']], 
+    'text-field': ['concat', ['get', 'Country']], 
     'text-font': ['Open Sans Bold'],
       'text-size': 10,
       'text-anchor': 'center'
