@@ -4,7 +4,7 @@ let topTitleDiv = "<h4>Open Mapping Hub | West and Northern Africa (WNAH) | In C
 
 let titleDiv = "<h1>Harnessing Open Participatory Mapping for Proactive Disaster Preparedness</h1>";
 
-let bylineDiv = "<p>Open Mapping Hub - West and Northern</p>";
+let bylineDiv = "<p>Open Mapping Hub - West and Northern Africa</p>";
 
 let descriptionDiv =
 "<p>The Open Mapping Hub - West and Northern Africa (WNAH) engages open mapping organizations and communities in the region to facilitate the exchange of ideas and expertise across the region, and provide financial and technical support to massively scale local edits on <strong>OpenStreetMap</strong>. We stimulate and strengthen the leadership of communities to protect their livelihoods, improve their resilience, and preserve their way of life by promoting social justice in accessing open data and free software for their own purposes.</p>" +
@@ -109,9 +109,9 @@ let divChapter6 =
 
 "<p>We are collecting information on specific areas in these priority countries that need urgent mapping. Whether you’re a humanitarian organization, community member, or mapping enthusiast, your input is valuable in ensuring we focus on the most critical locations.</p>"  +
 
-"<p><p>🔗 Fill out our <strong>Priority Mapping Form</strong> to suggest areas that need urgent attention: <a href='INSERT_FORM_LINK_HERE' target='_blank'>Submit a Suggestion</a></p></p>" +
-"<p><h2>Priority Focus</h2>" +
-"<p>Follow the mapping guide <a href='INSERT_LINK_HERE' target='_blank'>here</a> to join us in <strong>#MappingforAnticipatoryAction</strong> and help build more resilient communities.</p>" +
+//"<p><p>🔗 Fill out our <strong>Priority Mapping Form</strong> to suggest areas that need urgent attention: <a href='INSERT_FORM_LINK_HERE' target='_blank'>Submit a Suggestion</a></p></p>" +
+//"<p><h2>Priority Focus</h2>" +
+//"<p>Follow the mapping guide <a href='INSERT_LINK_HERE' target='_blank'>here</a> to join us in <strong>#MappingforAnticipatoryAction</strong> and help build more resilient communities.</p>" +
 "<h2>Get Involved: Partnership</h2>" +
 "<p>We welcome partnerships with humanitarian organizations, government agencies, universities, tech communities, and local NGOs to expand mapping efforts.</p>" +
 
